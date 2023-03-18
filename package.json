@@ -1,8 +1,9 @@
 {
   "name": "bosti-football-app",
   "version": "0.0.1",
-  "description": "CLI that generates beautiful README.md files.",
+  "description": "Application for all football information",
   "author": "Fabrizio Nucci",
+  "homepage": "https://github.com/fabrinucci/react-bosti-football",
   "license": "MIT",
   "repository": {
     "type": "git",
