@@ -1,6 +1,6 @@
 import { useLeagues } from '../hooks';
 
-export const HomePage = () => {
+export const Home = () => {
   const { leagues, isLoading, error } = useLeagues();
 
   return (
