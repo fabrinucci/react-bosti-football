@@ -1,22 +1,21 @@
-import express from 'express';
-import cors from 'cors';
-import axios from 'axios';
-import dotenv from 'dotenv';
-dotenv.config();
+const express = require('express');
+const cors = require('cors');
+const axios = require('axios');
+require('dotenv').config();
 
 const app = express();
-const Port = 5000;
+const Port = process.env.PORT | 5000;
 
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send('Hello my friend');
+  res.json('Hello my friend');
 });
 
 app.get('/leagues', (req, res) => {
   const options = {
     method: 'GET',
-    baseURL: 'https://v3.football.api-sports.io/leagues',
+    url: 'https://v3.football.api-sports.io/leagues',
     headers: {
       'x-apisports-key': process.env.API_KEY,
     },
