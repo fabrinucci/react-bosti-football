@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { getLeagues } from '../api';
-import { Leagues } from '../interfaces';
+import { ILeagues } from '../interfaces/leagues';
 
 export const useLeagues = () => {
-  const [leagues, setLeagues] = useState<Leagues>();
+  const [leagues, setLeagues] = useState<ILeagues>();
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 

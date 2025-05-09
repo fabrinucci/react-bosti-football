@@ -1,4 +1,4 @@
-export interface Leagues {
+export interface ILeagues {
   get: string;
   parameters: string[];
   errors: string[];

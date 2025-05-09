@@ -1,2 +1,2 @@
 export { footballApi } from './footballApi';
-export { getLeagues } from './fetchApi';
+export { getLeagues, getLeague } from './fetchApi';
